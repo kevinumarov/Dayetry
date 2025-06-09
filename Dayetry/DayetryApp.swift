@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct DayetryApp: App {
+    @StateObject private var appState = AppState()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
+                .environmentObject(appState)
         }
     }
 }

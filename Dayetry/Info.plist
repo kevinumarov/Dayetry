@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>UILaunchScreen</key>
+    <dict/>
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>armv7</string>
+    </array>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <key>UIAppFonts</key>
+    <array>
+        <string>Fonts/Darky/Darky-Black.ttf</string>
+        <string>Fonts/Darky/Darky-BlackItalic.ttf</string>
+        <string>Fonts/Darky/Darky-Bold.ttf</string>
+        <string>Fonts/Darky/Darky-BoldItalic.ttf</string>
+        <string>Fonts/Darky/Darky-ExtraBold.ttf</string>
+        <string>Fonts/Darky/Darky-ExtraBoldItalic.ttf</string>
+        <string>Fonts/Darky/Darky-ExtraLight.ttf</string>
+        <string>Fonts/Darky/Darky-ExtraLightItalic.ttf</string>
+        <string>Fonts/Darky/Darky-Italic.ttf</string>
+        <string>Fonts/Darky/Darky-Light.ttf</string>
+        <string>Fonts/Darky/Darky-LightItalic.ttf</string>
+        <string>Fonts/Darky/Darky-Medium.ttf</string>
+        <string>Fonts/Darky/Darky-MediumItalic.ttf</string>
+        <string>Fonts/Darky/Darky-Regular.ttf</string>
+        <string>Fonts/Darky/Darky-SemiBold.ttf</string>
+        <string>Fonts/Darky/Darky-SemiBoldItalic.ttf</string>
+        <string>Fonts/Darky/Darky-Thin.ttf</string>
+        <string>Fonts/Darky/Darky-ThinItalic.ttf</string>
+    </array>
+</dict>
+</plist> 
