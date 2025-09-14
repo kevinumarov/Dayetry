@@ -7,7 +7,7 @@ struct MainView: View {
             Group {
                 switch selectedTab {
                 case .energy:
-                    EnergyView()
+                    EnergyDashboardView()
                 case .arsenal:
                     ArsenalView()
                 case .calendar:
@@ -23,4 +23,4 @@ struct MainView: View {
 
 #Preview {
     MainView()
-} 
+}
