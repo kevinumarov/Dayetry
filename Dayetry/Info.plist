@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"\>
 <plist version="1.0">
 <dict>
     <key>CFBundleDevelopmentRegion</key>
@@ -30,6 +30,19 @@
         <string>UIInterfaceOrientationLandscapeLeft</string>
         <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
+    
+    <!-- HealthKit Permissions -->
+    <key>NSHealthShareUsageDescription</key>
+    <string>Dayetry needs access to your health data to calculate your energy levels based on sleep, activity, and workouts.</string>
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>Dayetry may update your health data with energy-related metrics.</string>
+    
+    <!-- Screen Time Permissions -->
+    <key>NSDeviceActivityUsageDescription</key>
+    <string>Dayetry needs access to your screen time data to calculate mental energy based on app usage patterns.</string>
+    <key>NSFamilyControlsUsageDescription</key>
+    <string>Dayetry uses screen time data to help optimize your digital wellness and mental energy.</string>
+    
     <key>UIAppFonts</key>
     <array>
         <string>Fonts/Darky/Darky-Black.ttf</string>
@@ -52,4 +65,4 @@
         <string>Fonts/Darky/Darky-ThinItalic.ttf</string>
     </array>
 </dict>
-</plist> 
+</plist>

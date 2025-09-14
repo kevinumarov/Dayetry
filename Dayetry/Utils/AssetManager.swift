@@ -3,8 +3,22 @@ import SwiftUI
 enum AssetManager {
     enum Icons {
         static let energy = "Dashboard"
+        static let emotionalEnergy = "emotionalEnergy"
         static let arsenal = "Cube"
         static let calendar = "Calendar"
+        
+        // Calendar icons
+        static let plus = "Plus"
+        static let chevronLeft = "Chevron Left"
+        static let chevronRight = "Chevron Right"
+        static let clock = "Clock"
+        static let edit = "Edit1"
+        static let cross = "Cross"
+        static let user = "User"
+        static let briefcase = "Briefcase"
+        static let heart = "Heart"
+        static let dollarCircle = "Dollar Circle"
+        
         // Add your icon names here
         static let placeholder = "placeholder"
     }
@@ -44,4 +58,4 @@ extension Image {
     static func icon(_ name: String) -> Image {
         Image(name)
     }
-} 
+}

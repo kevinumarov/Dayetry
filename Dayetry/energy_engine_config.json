@@ -1,0 +1,217 @@
+{
+  "version": "1.0",
+  "last_updated": "2024-01-15",
+  "energy_engines": {
+    "mental": {
+      "base_decay": {
+        "rate_per_hour": 0.007,
+        "max_hours": 14
+      },
+      "drain_factors": {
+        "app_switching": {
+          "threshold": 10,
+          "impact": 5,
+          "description": "High app switching reduces focus"
+        },
+        "screen_time": {
+          "threshold": 120,
+          "impact": 10,
+          "description": "Excessive screen time drains mental energy"
+        },
+        "short_form_content": {
+          "threshold": 30,
+          "impact": 8,
+          "description": "Short-form content reduces attention span"
+        },
+        "insufficient_break": {
+          "threshold": 120,
+          "impact": 5,
+          "description": "Long periods without breaks reduce focus"
+        },
+        "low_emotional_energy": {
+          "threshold": 30,
+          "impact": 10,
+          "description": "Low emotional energy affects mental clarity"
+        }
+      },
+      "boost_factors": {
+        "meditation": {
+          "impact": 8,
+          "description": "Meditation improves focus and clarity"
+        },
+        "journaling": {
+          "impact": 5,
+          "description": "Journaling enhances self-awareness"
+        },
+        "deep_work": {
+          "impact": 6,
+          "description": "Deep work sessions build mental stamina"
+        }
+      }
+    },
+    "physical": {
+      "drain_factors": {
+        "poor_sleep": {
+          "threshold": 6,
+          "impact": 15,
+          "description": "Insufficient sleep severely impacts physical energy"
+        },
+        "low_activity": {
+          "threshold": 1000,
+          "impact": 10,
+          "description": "Sedentary lifestyle reduces physical energy"
+        },
+        "poor_hydration": {
+          "threshold": 3,
+          "impact": 5,
+          "description": "Inadequate hydration affects physical performance"
+        },
+        "high_stress": {
+          "threshold": 70,
+          "impact": 10,
+          "description": "High stress levels drain physical energy"
+        }
+      },
+      "boost_factors": {
+        "good_sleep": {
+          "threshold": 7.5,
+          "impact": 10,
+          "description": "Quality sleep restores physical energy"
+        },
+        "high_activity": {
+          "threshold": 5000,
+          "impact": 10,
+          "description": "Regular activity boosts physical energy"
+        },
+        "workout": {
+          "impact": 8,
+          "description": "Exercise boosts physical energy and mood"
+        },
+        "good_diet": {
+          "threshold": 70,
+          "impact": 5,
+          "description": "Healthy nutrition supports physical energy"
+        }
+      }
+    },
+    "financial": {
+      "drain_factors": {
+        "overspending": {
+          "threshold": 0,
+          "impact": 15,
+          "description": "Overspending budget creates financial stress"
+        },
+        "no_income": {
+          "threshold": 0,
+          "impact": 10,
+          "description": "No income generation reduces financial energy"
+        },
+        "low_emotional_energy": {
+          "threshold": 40,
+          "impact": 5,
+          "description": "Low emotional energy affects financial decisions"
+        }
+      },
+      "boost_factors": {
+        "income_earned": {
+          "threshold": 0,
+          "impact": 10,
+          "description": "Meeting income targets boosts financial confidence"
+        },
+        "intentional_spending": {
+          "impact": 5,
+          "description": "Conscious spending decisions improve financial energy"
+        },
+        "reflection_done": {
+          "impact": 5,
+          "description": "Regular financial review enhances money management"
+        }
+      }
+    },
+    "emotional": {
+      "drain_factors": {
+        "long_check_in_gap": {
+          "threshold": 8,
+          "impact": 10,
+          "description": "Long periods without emotional check-ins"
+        },
+        "negative_journal": {
+          "threshold": 0,
+          "impact": 10,
+          "description": "Negative journaling patterns affect emotional state"
+        },
+        "excessive_social_media": {
+          "threshold": 50,
+          "impact": 5,
+          "description": "Excessive messaging creates emotional overwhelm"
+        },
+        "excessive_social_media": {
+          "threshold": 60,
+          "impact": 5,
+          "description": "Too many phone calls drain emotional energy"
+        },
+        "excessive_social_media": {
+          "threshold": 90,
+          "impact": 10,
+          "description": "Excessive social media usage affects emotional well-being"
+        },
+        "low_other_energies": {
+          "threshold": 30,
+          "impact": 8,
+          "description": "Low physical or financial energy affects emotional state"
+        }
+      },
+      "boost_factors": {
+        "positive_journal": {
+          "impact": 8,
+          "description": "Positive journaling enhances emotional well-being"
+        },
+        "gratitude_logged": {
+          "impact": 6,
+          "description": "Gratitude practice boosts emotional energy"
+        },
+        "deep_connection": {
+          "impact": 6,
+          "description": "Meaningful social connections enhance emotional energy"
+        },
+        "mindfulness_practice": {
+          "impact": 5,
+          "description": "Mindfulness and meditation improve emotional stability"
+        }
+      }
+    }
+  },
+  "cross_energy_dependencies": {
+    "mental_to_emotional": {
+      "threshold": 30,
+      "impact": -5,
+      "description": "Mental fatigue affects emotional stability"
+    },
+    "physical_to_emotional": {
+      "threshold": 30,
+      "impact": -8,
+      "description": "Physical exhaustion impacts emotional state"
+    },
+    "emotional_to_financial": {
+      "threshold": 40,
+      "impact": -5,
+      "description": "Emotional stress influences financial decisions"
+    },
+    "physical_to_mental": {
+      "threshold": 30,
+      "impact": -3,
+      "description": "Low physical energy reduces mental capacity"
+    }
+  },
+  "evaluation_schedule": {
+    "frequency_minutes": 60,
+    "peak_hours": [9, 14, 18],
+    "off_hours": [22, 23, 0, 1, 2, 3, 4, 5, 6]
+  },
+  "prime_score_weights": {
+    "mental": 0.3,
+    "physical": 0.3,
+    "financial": 0.2,
+    "emotional": 0.2
+  }
+}
